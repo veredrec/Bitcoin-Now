@@ -1,21 +1,12 @@
 {
   "manifest_version": 2,
-  "name": "Quote It",
+  "name": "Bitcoin Now",
   "author": "Vered Rekanati",
   "version": "0.1",
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
-    }
-  ],
-  "background": {
-    "scripts": ["background.js"]
-  },
   "browser_action": {
-    "default_icon": "V.png",
+    "default_icon": "bitcoin.png",
     "default_popup": "popup/index.html",
-    "default_title": "Popup would appear here"
+    "default_title": "Bitcoin Now"
   },
   "content_security_policy":
     "script-src 'self' https://use.fontawesome.com/7a1353cd80.js; object-src 'self'"
