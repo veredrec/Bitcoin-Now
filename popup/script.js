@@ -1,3 +1,4 @@
+// variables to hold the data from API and manipulate the DOM
 var coinUsd, codeUsd, coinEur, codeEur, coinGbp, codeGbp;
 var usd = document.getElementById('usd');
 var gbp = document.getElementById('gbp');
@@ -5,6 +6,7 @@ var eur = document.getElementById('eur');
 var price = document.getElementById('price');
 var currency = 'USD';
 
+// Click events for setting the current currency and executing the API call on a click
 usd.addEventListener('click', function() {
   currentCoin = 'USD';
   usd.classList.add('currentInput');
@@ -29,6 +31,7 @@ eur.addEventListener('click', function() {
   getCoin('EUR');
 });
 
+// API call to fetch the data
 function getCoin(currency) {
   var url = 'https://api.coindesk.com/v1/bpi/currentprice.json';
   fetch(url)
