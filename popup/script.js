@@ -5,29 +5,29 @@ var eur = document.getElementById('eur');
 var price = document.getElementById('price');
 var currency = 'USD';
 
-// usd.addEventListener('click', function() {
-//   currentCoin = 'USD';
-//   usd.classList.add('currentInput');
-//   gbp.classList.remove('currentInput');
-//   eur.classList.remove('currentInput');
-//   getCoin('USD');
-// });
-//
-// gbp.addEventListener('click', function() {
-//   currentCoin = 'GBP';
-//   gbp.classList.add('currentInput');
-//   usd.classList.remove('currentInput');
-//   eur.classList.remove('currentInput');
-//   getCoin('GBP');
-// });
-//
-// eur.addEventListener('click', function() {
-//   currentCoin = 'EUR';
-//   eur.classList.add('currentInput');
-//   gbp.classList.remove('currentInput');
-//   usd.classList.remove('currentInput');
-//   getCoin('EUR');
-// });
+usd.addEventListener('click', function() {
+  currentCoin = 'USD';
+  usd.classList.add('currentInput');
+  gbp.classList.remove('currentInput');
+  eur.classList.remove('currentInput');
+  getCoin('USD');
+});
+
+gbp.addEventListener('click', function() {
+  currentCoin = 'GBP';
+  gbp.classList.add('currentInput');
+  usd.classList.remove('currentInput');
+  eur.classList.remove('currentInput');
+  getCoin('GBP');
+});
+
+eur.addEventListener('click', function() {
+  currentCoin = 'EUR';
+  eur.classList.add('currentInput');
+  gbp.classList.remove('currentInput');
+  usd.classList.remove('currentInput');
+  getCoin('EUR');
+});
 
 function getCoin(currency) {
   var url = 'https://api.coindesk.com/v1/bpi/currentprice.json';
@@ -45,7 +45,6 @@ function getCoin(currency) {
 
       codeEur = coin.EUR.code;
       coinEur = coin.EUR.rate.split('.')[0];
-      console.log('start fetch with currency ', currency);
 
       if (currency === 'EUR') {
         price.textContent = coinEur + ' ' + codeEur;

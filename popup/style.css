@@ -1,8 +1,8 @@
 body {
-  color: #d8c07f;
+  color: #ffc923;
   margin: 0;
   padding: 2rem;
-  background-image: url('http://ak0.picdn.net/shutterstock/videos/5070500/thumb/1.jpg');
+  background-image: url('https://cdn.pixabay.com/photo/2017/08/17/16/37/bitcoin-2651926_960_720.jpg');
   background-size: cover;
   font-family: 'Mina', sans-serif;
 }
@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #464648;
+  background-color: #3b3b3b;
   width: 20rem;
   padding: 3rem;
   border-radius: 1rem;
@@ -44,7 +44,7 @@ body {
   border: none;
   border-radius: 50%;
   margin: 1rem;
-  background-color: #d8c07f;
+  background-color: #ffc923;
   font-size: 1rem;
   color: #2b2b2e;
 }
@@ -52,7 +52,8 @@ body {
   outline: 0;
 }
 .currentInput {
-  background-color: #eeb928;
+  background-color: #ff9223;
   transform: scale(1.1);
-  transition: 0.5s ease-in;
+  font-size: 1.2rem;
+  transition: 0.3s ease-in;
 }
