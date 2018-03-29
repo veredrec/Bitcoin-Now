@@ -1,5 +1,5 @@
 // variables to hold the data from API and manipulate the DOM
-var coinUsd, codeUsd, coinEur, codeEur, coinGbp, codeGbp;
+var currentCurrency, coinUsd, codeUsd, coinEur, codeEur, coinGbp, codeGbp;
 var usd = document.getElementById('usd');
 var gbp = document.getElementById('gbp');
 var eur = document.getElementById('eur');
@@ -40,14 +40,27 @@ function getCoin(currency) {
     })
     .then(function(data) {
       var coin = data.bpi;
+
+      // USD
       codeUsd = coin.USD.code;
-      coinUsd = coin.USD.rate.split('.')[0];
+      coinUsd =
+        coin.USD.rate.split('.')[0] +
+        '.' +
+        coin.USD.rate.split('.')[1].substring(0, 2);
 
+      // GBP
       codeGbp = coin.GBP.code;
-      coinGbp = coin.GBP.rate.split('.')[0];
+      coinGbp =
+        coin.GBP.rate.split('.')[0] +
+        '.' +
+        coin.GBP.rate.split('.')[1].substring(0, 2);
 
+      // EUR
       codeEur = coin.EUR.code;
-      coinEur = coin.EUR.rate.split('.')[0];
+      coinEur =
+        coin.EUR.rate.split('.')[0] +
+        '.' +
+        coin.EUR.rate.split('.')[1].substring(0, 2);
 
       if (currency === 'EUR') {
         price.textContent = coinEur + ' ' + codeEur;
