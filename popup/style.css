@@ -1,7 +1,7 @@
 body {
   color: #ffc923;
   margin: 0;
-  padding: 2rem;
+  padding: 1.5rem;
   background-image: url('https://cdn.pixabay.com/photo/2017/08/17/16/37/bitcoin-2651926_960_720.jpg');
   background-size: cover;
   font-family: 'Mina', sans-serif;
@@ -11,36 +11,36 @@ body {
   flex-direction: column;
   justify-content: center;
   background-color: #3b3b3b;
-  width: 20rem;
-  padding: 3rem;
+  width: 15rem;
+  padding: 2rem;
   border-radius: 1rem;
-  margin: 5rem auto;
+  margin: 4rem auto;
 }
 .title {
   text-align: center;
   padding: 0;
   margin-top: 0;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
 }
 .currentPrice {
   text-align: center;
-  line-height: 1.5rem;
+  line-height: 1.3rem;
 }
 .current {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 }
 .price {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .menu {
   display: flex;
   justify-content: center;
 }
 .cur {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border: none;
   border-radius: 50%;
   margin: 1rem;
