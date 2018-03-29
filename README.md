@@ -4,6 +4,8 @@
 
 **Convert between currencies to see the most updated value in USD / EUR / GBP**
 
-<img src="screenshot.png" alt="extension screenshot" style="width:300px;display:block;margin:0 auto;"/>
+<img src="screenshot.png" alt="extension screenshot">
 
 Information is provided by [coin desk](https://www.coindesk.com/) API
+
+Background image by [geralt](https://pixabay.com/en/users/geralt-9301/), Pixabay
