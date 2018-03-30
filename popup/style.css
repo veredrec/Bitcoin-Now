@@ -1,7 +1,7 @@
 body {
   color: #ffc923;
   margin: 0;
-  padding: 1.5rem;
+  padding: 0.5rem 6rem;
   background-image: url('https://cdn.pixabay.com/photo/2017/08/17/16/37/bitcoin-2651926_960_720.jpg');
   background-size: cover;
   font-family: 'Mina', sans-serif;
@@ -11,10 +11,10 @@ body {
   flex-direction: column;
   justify-content: center;
   background-color: #3b3b3b;
-  width: 15rem;
+  width: 13rem;
   padding: 2rem;
   border-radius: 1rem;
-  margin: 4rem auto;
+  margin: 2rem auto;
 }
 .title {
   text-align: center;
