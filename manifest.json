@@ -1,6 +1,8 @@
 {
   "manifest_version": 2,
   "name": "Bitcoin Now",
+  "short_name": "Bitcoin",
+  "description": "Shows current Bitcoin value in USD, EUR, and GBP",
   "author": "Vered Rekanati",
   "version": "0.0.1",
   "browser_action": {
