@@ -4,7 +4,7 @@
   "author": "Vered Rekanati",
   "version": "0.1",
   "browser_action": {
-    "default_icon": "bitcoin.png",
+    "default_icon": "bitcoin-now.png",
     "default_popup": "popup/index.html",
     "default_title": "Bitcoin Now"
   },
